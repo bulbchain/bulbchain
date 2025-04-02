@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container, NavDropdown} from "react-bootstrap";
 import LogoKernel from '../assets/img/LogoKernel.png'
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
-import xlogo from '../assets/img/NewXlogo.png';
+import LnLogo from '../assets/img/WhiteLnLogo.png';
+import navIcon3 from '../assets/img/teleWhite.png';
+import xlogo from '../assets/img/Xwhite.png';
 import { HashLink } from 'react-router-hash-link';
 
 import {
@@ -45,15 +45,16 @@ const Header =()=>{
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Product</Nav.Link>
-              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Governance</Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Ecosystem</Nav.Link>
+              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => {window.location.href = "https://kerneldao.com/restake/"}}>Product</Nav.Link>
+              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => {window.location.href = "https://forum.kerneldao.com/t/welcome-to-kerneldao-governance-forum/5"}}>Governance</Nav.Link>
+              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => {window.location.href = "https://kerneldao.com/ecosystem/"}}>Ecosystem</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://x.com/kernel_dao?lang=en"><img src={xlogo} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+              <a href="https://www.linkedin.com/company/kernel-dao"><img src={LnLogo} alt="" /></a>
+              <a href="https://t.me/KelpDAOxyz"><img src={navIcon3} alt="" /></a>
+              <a href="https://x.com/kernel_dao?lang=en"><img src={xlogo} alt="" /></a>
+               
               </div>
               <HashLink to='#connect'>
                 <button onClick={()=> {window.location.href = "https://kerneldao.com/restake/"}} className="vvd"><span>Launch App</span></button>
