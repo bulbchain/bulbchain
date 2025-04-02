@@ -1,11 +1,13 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import sword1 from '../assets/img/sword1.gif';
 import sword2 from '../assets/img/sword2.gif';
 import sword3 from '../assets/img/sword3.gif';
 import sword4 from '../assets/img/sword4.gif';
-import sword5 from '../assets/img/sword2.gif';
+import kernel from '../assets/img/kernel1.svg';
+import gain from '../assets/img/gain1.svg';
+import kelp from '../assets/img/kelp1.svg';
 import colorSharp from '../assets/img/color-sharp.png';
 const Skills=()=>{
 
@@ -32,40 +34,59 @@ const Skills=()=>{
     return(
         <section>
             <Container className="skill" id="skills">
-                <Row>
-                    <Col>
+                <>
+                   
                     <div className="skill-bx">
-                        <h2>Swords</h2>
-                        <p>A wide range of sward collection. choose the sword as per the power of your opponent</p>
-                        <Carousel responsive={responsive} infinite={true} className="skill-slider">
-                            <div className="item">
-                                <img src={sword1} alt="Image"/>
-                                <h5>Excalibur</h5>
-                            </div>
-                            <div className="item">
-                                <img src={sword2} alt="Image"/>
-                                <h5>Stormbringer</h5>
-                            </div>
-                            <div className="item">
-                                <img src={sword3} alt="Image"/>
-                                <h5>Gladius</h5>
-                            </div>
-                            <div className="item">
-                                <img src={sword4} alt="Image"/>
-                                <h5>Shamshir</h5>
-                            </div>
-                            <div className="item">
-                                <img src={sword5} alt="Image"/>
-                                <h5>Whisperwind</h5>
-                            </div>
-                            <div className="item">
-                                <img src={sword4} alt="Image"/>
-                                <h5>Frostheart</h5>
-                            </div>
-                        </Carousel>
+                        <h2>Products</h2>
+                        <p>Earn rewards on Ethereum, BTC, BNB with KernelDAO's products</p>
+                        <Row>
+                        <Col sm={6} md={4}>
+                            <div className="proj-imgbx1">
+                            <img src={kernel}/>
+                                <div className="">
+                                    <h8>{"Shared security protocol on BNB Chain. Restake BNB, BTC and other yield-bearing tokens and earn rewards"}</h8>
+                                    <span>{""}</span>
+
+                                    <h4 className="mt-5">$649.09M</h4>
+                                    <span>TVL</span>
+                                </div>
+                                <Button className="my-5" variant="light" href="https://kerneldao.com/restake/" target="_blank">Restake now</Button>
+                               </div>
+                        </Col>
+                        <Col sm={6} md={4}>
+                            <div className="proj-imgbx2">
+                            <img src={kelp}/>
+                                <div className="">
+                                    <h8>{"Liquid restaking protocol on Ethereum. Mint your ETH and Earn rewards on Ethereum like never Before."}</h8>
+                                    <span>{""}</span>
+
+                                    <h4 className="mt-5">$1.13B</h4>
+                                    <span>TVL</span>
+                                </div>
+                                <Button className="my-5" variant="light" href="https://kerneldao.com/kelp/" target="_blank">Mint rsETH</Button>
+                               </div>
+                        </Col>
+                        <Col sm={6} md={4}>
+                            <div className="proj-imgbx3">
+                            <img src={gain}/>
+                                <div  className="">
+                                    <h8>{"Automated vaults on Ethereum. Full proof secured funds with revenue sharing and No lock-up, no minimum ETH required."}</h8>
+                                    <span>{""}</span>
+
+                                    <h4 className="mt-5">$133.88M</h4>
+                                    <span>TVL</span>
+                                </div>
+                                <Button className="my-5" variant="light" href="https://kerneldao.com/kelp/gain/" target="_blank">Earn now</Button>
+                               </div>
+                        </Col>
+                        </Row>
+                       
+                        
+
                     </div>
-                    </Col>
-                </Row>
+                    
+                   
+                </>
             </Container>
             <img className="background-image-left" src={colorSharp} />
         </section>

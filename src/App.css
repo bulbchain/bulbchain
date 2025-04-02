@@ -422,19 +422,51 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  background-color: rgb(135, 60, 36);
 }
-.proj-imgbx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  opacity: 0.85;
-  position: absolute;
-  width: 100%;
-  height: 0;
-  transition: 0.4s ease-in-out;
+
+.proj-imgbx1 {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  background-color: rgb(135, 60, 36);
 }
-.proj-imgbx:hover::before {
-  height: 100%;
+
+.proj-imgbx1 img{
+  position: relative;
+ height: 40%;
+ width: 30%;
 }
+
+.proj-imgbx2 {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  background-color: rgb(11, 90, 90);
+}
+
+.proj-imgbx2 img{
+  position: relative;
+ height: 40%;
+ width: 30%;
+}
+
+.proj-imgbx3 {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  background-color: rgb(41, 111, 39);
+}
+
+.proj-imgbx3 img{
+position: relative;
+ height: 40%;
+ width: 30%;
+}
+
 .proj-txtx {
   position: absolute;
   text-align: center;
@@ -544,12 +576,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  padding: 0 0 0px 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
 }
+
 .newsletter-bx {
   background: #FFFFFF;
   border-radius: 55px;

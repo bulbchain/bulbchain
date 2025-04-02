@@ -8,6 +8,7 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import { NavBar } from './components/NavBar'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Footer } from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,7 +18,8 @@ function App() {
       <Header/>
       <Banner/>
       <Skills/>
-      <Projects/>
+      <Footer/>
+      {/* <Projects/> */}
     </>
   )
 }

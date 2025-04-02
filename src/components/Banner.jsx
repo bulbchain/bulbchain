@@ -18,7 +18,7 @@ import { useNavigate } from "react-router-dom";
                 <Col xs={12} md={6} xl={5}>
                 <img src={samDiana} alt="Header img"/>
                 </Col>
-            </Row>   v
+            </Row> 
         </Container>
         </section>
     )
