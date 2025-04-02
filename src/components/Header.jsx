@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container, NavDropdown} from "react-bootstrap";
-import chronials from '../assets/img/LogoKernel.png'
+import LogoKernel from '../assets/img/LogoKernel.png'
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import xlogo from '../assets/img/NewXlogo.png';
@@ -37,7 +37,7 @@ const Header =()=>{
         <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={chronials} alt="Logo" />
+            <img src={LogoKernel} alt="Logo" />
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav">
