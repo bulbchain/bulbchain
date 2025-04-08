@@ -53,7 +53,7 @@ const Header =()=>{
             <span className="navbar-text">
               <div className="social-icon">
               <a href="https://www.linkedin.com/company/kernel-dao"><img src={LnLogo} alt="kdao" /></a>
-              <a href="https://t.me/KERNELIIDAO"><img src={navIcon3} alt="kelp" /></a>
+              <a href="https://t.me/KERNELllDAO"><img src={navIcon3} alt="kelp" /></a>
               <a href="https://x.com/kernel_dao?lang=en"><img src={xlogo} alt="x" /></a>
               <a href="https://pump.fun/coin/A8EeZpqRfQfQrQGfoePc8qRdvbn6Z1o1DuGyDkL9pump"><img src={dexlogo} alt="dex" /></a>
                
