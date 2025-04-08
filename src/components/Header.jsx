@@ -4,6 +4,7 @@ import LogoKernel from '../assets/img/LogoKernel.png'
 import LnLogo from '../assets/img/WhiteLnLogo.png';
 import navIcon3 from '../assets/img/teleWhite.png';
 import xlogo from '../assets/img/Xwhite.png';
+import dexlogo from '../assets/img/DexLogo.png';
 import { HashLink } from 'react-router-hash-link';
 
 import {
@@ -51,9 +52,10 @@ const Header =()=>{
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-              <a href="https://www.linkedin.com/company/kernel-dao"><img src={LnLogo} alt="" /></a>
-              <a href="https://t.me/KelpDAOxyz"><img src={navIcon3} alt="" /></a>
-              <a href="https://x.com/kernel_dao?lang=en"><img src={xlogo} alt="" /></a>
+              <a href="https://www.linkedin.com/company/kernel-dao"><img src={LnLogo} alt="kdao" /></a>
+              <a href="https://t.me/KERNELIIDAO"><img src={navIcon3} alt="kelp" /></a>
+              <a href="https://x.com/kernel_dao?lang=en"><img src={xlogo} alt="x" /></a>
+              <a href="https://pump.fun/coin/A8EeZpqRfQfQrQGfoePc8qRdvbn6Z1o1DuGyDkL9pump"><img src={dexlogo} alt="dex" /></a>
                
               </div>
               <HashLink to='#connect'>
